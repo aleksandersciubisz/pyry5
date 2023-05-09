@@ -1,0 +1,42 @@
+#parish {
+	height: auto;
+	min-height: 100vh;
+	width: 100vw;
+	max-width: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 6rem 3rem;
+}
+
+#parish-content {
+	height: auto;
+	width: 100%;
+	max-width: var(--max);
+	max-width: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.parish-row {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.parish-row a {
+	margin: 1rem 1.61rem;
+}
+
+#parish-content h2,
+#parish-content p {
+	margin: 3rem;
+}

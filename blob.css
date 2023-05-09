@@ -1,0 +1,41 @@
+#blob {
+	background: linear-gradient(to right, var(--accent), var(--light-alt));
+	height: 500px;
+	aspect-ratio: 1;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	border-radius: 50%;
+	animation: rotate 20s infinite;
+	z-index: -3;
+}
+
+@keyframes rotate {
+	from {
+		rotate: 0deg;
+	}
+
+	50% {
+		scale: 1 1.6;
+	}
+	to {
+		rotate: 360deg;
+	}
+}
+
+#blob-blur {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -2;
+	backdrop-filter: blur(170px);
+}
+
+#blob-background {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -20;
+	background-color: var(--light);
+}

@@ -1,0 +1,12 @@
+.horizontal-scroll-wrapper {
+	overflow-x: hidden;
+	position: relative;
+}
+
+.horizontal-scroll-container {
+	display: flex;
+	width: 400vw;
+}
+
+.scrollx {
+}

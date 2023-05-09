@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Prototyp 5</title>
+	</head>
+	<body>
+		<div id="blob-background"></div>
+
+		<div id="blob"></div>
+		<div id="blob-blur"></div>
+		<div class="cursor-dot-outline"></div>
+		<div class="cursor-dot"></div>
+		<a
+			id="logo"
+			href="#home"
+			><img
+				class="logo cursor-toggle"
+				src="/images/logo.png"
+				alt=""
+		/></a>
+
+		<div id="full-screen-nav">
+			<a
+				href=""
+				class="mobile-only"
+				>Aktualności</a
+			>
+			<a
+				href=""
+				class="mobile-only"
+				>Parafia</a
+			>
+
+			<div class="spread-nav">
+				<a href="">Msza Świeta</a>
+				<div class="spread-nav-row">
+					<a href="">Sakramenty</a>
+					<a href="">Patroni</a>
+				</div>
+			</div>
+			<div class="spread-nav">
+				<a href="">Poznajmy się</a>
+				<div class="spread-nav-row">
+					<a href="">Księża</a>
+					<a href="">Siostry</a>
+					<a href="">Parafianie</a>
+				</div>
+			</div>
+
+			<div class="spread-nav">
+				<a href="">Wspólnoty</a>
+				<div class="spread-nav-row">
+					<a href="">Modlitewne</a>
+					<a href="">Chór</a>
+					<a href="">Zgromadzenia</a>
+				</div>
+			</div>
+
+			<div class="spread-nav">
+				<a href="">Kancelaria</a>
+				<div class="spread-nav-row">
+					<a href="">Cmentarz</a>
+					<a href="">Dokumenty</a>
+				</div>
+			</div>
+
+			<div class="spread-nav">
+				<a href="">Historia</a>
+				<div class="spread-nav-row">
+					<a href="">Architektura</a>
+					<a href="">Sztuka</a>
+				</div>
+			</div>
+			<a
+				href=""
+				class="mobile-only"
+				>Kontakt</a
+			>
+			<img
+				id="full-screen-nav-logo"
+				src="images/logo.png"
+				alt="" />
+		</div>
+
+		<header>
+			<a
+				class="btn"
+				href="#news"
+				>Aktualności</a
+			>
+			<a
+				class="btn"
+				href="#parish"
+				>Parafia</a
+			>
+			<a
+				class="btn"
+				href="#contact"
+				>Kontakt</a
+			>
+			<a href="#">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="20"
+					height="20"
+					viewBox="0 0 24 22"
+					fill="none"
+					stroke="var(--light)"
+					stroke-width="1"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-facebook">
+					<path
+						d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+				</svg>
+			</a>
+
+			<a href="#">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="20"
+					height="20"
+					viewBox="0 0 24 20"
+					fill="none"
+					stroke="var(--light)"
+					stroke-width="1"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-youtube">
+					<path
+						d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+					<polygon
+						points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+				</svg>
+			</a>
+
+			<div
+				id="toggler-wrapper"
+				class="cursor-toggle">
+				<input
+					type="checkbox"
+					id="nav-toggler" />
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 16"
+					fill="none"
+					stroke="var(--light)"
+					stroke-width="1"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-menu">
+					<line
+						x1="3"
+						y1="12"
+						x2="21"
+						y2="12"></line>
+					<line
+						x1="3"
+						y1="6"
+						x2="21"
+						y2="6"></line>
+					<line
+						x1="3"
+						y1="18"
+						x2="21"
+						y2="18"></line>
+				</svg>
+			</div>
+		</header>
+		<main>
+			<section id="home">
+				<div id="home-video">
+					<video
+						src="msza.mp4"
+						autoplay
+						muted
+						loop></video>
+				</div>
+				<div id="home-content">
+					<h3>Parafia Świętych Apostołów</h3>
+					<h1>Piotra i Pawła</h1>
+					<br />
+					<h3>Twoje miejsce spotkania z&nbsp;Bogiem</h3>
+				</div>
+				<div id="scroll-arrow">
+					<svg
+						width="30px"
+						height="20px">
+						<path
+							stroke="var(--light)"
+							fill="none"
+							stroke-width="2px"
+							d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "></path>
+					</svg>
+				</div>
+			</section>
+			<section id="news"></section>
+			<div class="horizontal-scroll-wrapper">
+				<div class="horizontal-scroll-container scrollx">
+					<section id="parish">
+						<div id="parish-content">
+							<h2>Nasza Parafia</h2>
+							<div class="parish-row">
+								<a href="">&#9769;&nbsp;Księża&nbsp;&#9769;</a>
+								<a href="">&#9769;&nbsp;Siostry&nbsp;&#9769;</a>
+								<a href="">&#9769;&nbsp;Parafianie&nbsp;&#9769;</a>
+								<a href="">&#9769;&nbsp;Grupy i Wspólnoty&nbsp;&#9769;</a>
+							</div>
+							<div class="parish-row">
+								<a href="">&#9769;&nbsp;Kancelaria&nbsp;&#9769;</a>
+								<a href="">&#9769;&nbsp;Cmentarz&nbsp;&#9769;</a>
+								<a href="">&#9769;&nbsp;Historia&nbsp;&#9769;</a>
+							</div>
+							<div class="parish-row">
+								<a href="">&#9769;&nbsp;Architektura i Sztuka&nbsp;&#9769;</a>
+								<a href="">&#9769;&nbsp;Patroni&nbsp;&#9769;</a>
+							</div>
+
+							<p>
+								"Parafia katolicka to wspólnota wierzących skupiona wokół
+								kościoła, prowadząca modlitwę i służąca bliźnim, <br />
+								będąca fundamentalnym elementem życia Kościoła powszechnego."
+							</p>
+						</div>
+					</section>
+					<section id="priests">
+						<h2>Księża</h2>
+					</section>
+					<section id="sisters">
+						<h2>Siostry</h2>
+					</section>
+					<section id="parishioners">
+						<h2>Parafianie</h2>
+					</section>
+				</div>
+			</div>
+			<section
+				style="
+					height: 100vh;
+					width: 100vw;
+					max-width: 100vw;
+
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				">
+				<a href="">link-test</a>
+				<a
+					class="btn"
+					href=""
+					>link-button</a
+				>
+				<button>button</button>
+			</section>
+			<section style="height: 100vh"></section>
+		</main>
+		<footer></footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+		<script
+			type="module"
+			src="/main.js"></script>
+	</body>
+</html>
