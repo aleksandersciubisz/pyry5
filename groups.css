@@ -1,0 +1,109 @@
+#groups {
+	width: 100%;
+	max-width: var(--max);
+	height: auto;
+	min-height: 200vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 6rem 3rem;
+}
+
+#groups-intro h1 {
+	margin-bottom: 6rem;
+}
+
+#groups-intro h4 {
+	margin-bottom: 3rem;
+}
+
+#groups-intro a {
+	font-family: 'Cinzel', serif;
+}
+
+#groups-intro h4 a {
+	font-size: var(--h4-font);
+	letter-spacing: 0.1em;
+}
+
+.group,
+.choir {
+	width: 100%;
+	max-width: var(--max);
+	height: auto;
+	margin: 6rem 0;
+	padding: 1.61rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 3rem;
+}
+
+.group img,
+.choir img {
+	height: 100%;
+	width: auto;
+	border-radius: 3px;
+	box-shadow: 0 4px 30px hsla(359, 59%, 31%, 0.7);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	border: 1px solid hsla(36, 100%, 95%, 0.6);
+}
+
+.group-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.group-social {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+	width: auto;
+	margin-top: 1rem;
+}
+.group-social svg {
+	margin-left: 1.61rem;
+	transition: all 0.4s ease;
+	margin-top: 1.61rem;
+}
+
+.group-social p {
+	margin-top: 1.61rem;
+}
+
+.group-social a svg:hover path,
+.group-social a svg:hover polygon {
+	stroke: var(--dark-alt);
+	stroke-width: 2;
+}
+
+.group {
+	border-radius: 3px;
+	box-shadow: 0 4px 30px hsla(359, 59%, 31%, 0.7);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	border: 1px solid hsla(36, 100%, 95%, 0.6);
+	background: var(--light);
+}
+
+.choir h4 {
+	margin-top: 1.61rem;
+}
+
+.choir img {
+	align-self: center;
+}
+
+.group a {
+	color: var(--dark);
+}
+
+.group a:hover {
+	color: var(--accent);
+}

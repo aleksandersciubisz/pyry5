@@ -1,0 +1,57 @@
+#contact {
+	width: 100%;
+	max-width: var(--max);
+	height: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 6rem;
+	padding: 6rem 3rem 12rem 3rem;
+}
+
+form {
+	width: 62%;
+}
+
+.feedback-input {
+	color: var(--dark);
+	font-size: var(--normal-font);
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--accent);
+	font-family: 'Cardo', serif;
+
+	transition: all 0.3s;
+	padding: 0;
+	margin-bottom: 1.61rem;
+	width: 100%;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.feedback-input:focus {
+	color: var(--accent);
+	border-bottom: 2px solid var(--accent);
+}
+
+.feedback-input::placeholder {
+	color: var(--dark);
+	opacity: 1; /* Firefox */
+}
+
+.feedback-input:focus::placeholder {
+	color: var(--dark-opaque);
+	opacity: 0.6;
+}
+
+textarea {
+	height: 6rem;
+	line-height: 120%;
+	resize: vertical;
+}
+
+form .btn {
+	margin: 0;
+}

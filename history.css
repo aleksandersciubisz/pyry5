@@ -1,0 +1,150 @@
+#history {
+	width: 100%;
+	max-width: var(--max);
+	height: 80vh;
+	overflow-y: hidden;
+	display: grid;
+	grid-template-columns: 1fr 1px 1fr;
+	grid-template-rows: repeat(20, auto);
+	padding: 6rem 3rem;
+}
+
+#history-header {
+	grid-column: 1/4;
+	grid-row: 1/2;
+	text-align: center;
+	padding: 3rem;
+}
+
+#history-border {
+	grid-column: 2/3;
+	grid-row: 2/19;
+	height: 100%;
+
+	border-left: 1px solid var(--accent);
+}
+
+.history-content {
+	padding: 3rem 1.61rem;
+}
+
+.history-content h4:first-child {
+	color: var(--accent);
+	margin-bottom: 1.61rem;
+}
+
+.history-content:nth-child(odd) h4:first-child {
+	text-align: right;
+}
+
+#history .history-content:nth-child(3) {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+#history .history-content:nth-child(4) {
+	grid-column: 3/4;
+	grid-row: 3/4;
+}
+
+#history .history-content:nth-child(5) {
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+
+#history .history-content:nth-child(6) {
+	grid-column: 3/4;
+	grid-row: 5/6;
+}
+
+#history .history-content:nth-child(7) {
+	grid-column: 1/2;
+	grid-row: 6/7;
+}
+
+#history .history-content:nth-child(8) {
+	grid-column: 3/4;
+	grid-row: 7/8;
+}
+
+#history .history-content:nth-child(9) {
+	grid-column: 1/2;
+	grid-row: 8/9;
+}
+
+#history .history-content:nth-child(10) {
+	grid-column: 3/4;
+	grid-row: 9/10;
+}
+
+#history .history-content:nth-child(11) {
+	grid-column: 1/2;
+	grid-row: 10/11;
+}
+
+#history .history-content:nth-child(12) {
+	grid-column: 3/4;
+	grid-row: 11/12;
+}
+
+#history .history-content:nth-child(13) {
+	grid-column: 1/2;
+	grid-row: 12/13;
+}
+
+#history .history-content:nth-child(14) {
+	grid-column: 3/4;
+	grid-row: 13/14;
+}
+
+#history .history-content:nth-child(15) {
+	grid-column: 1/2;
+	grid-row: 14/15;
+	text-align: right;
+}
+
+#history .history-content:nth-child(16) {
+	grid-column: 3/4;
+	grid-row: 15/16;
+}
+
+#history .history-content:nth-child(17) {
+	grid-column: 1/2;
+	grid-row: 16/17;
+	text-align: right;
+}
+
+#history .history-content:nth-child(18) {
+	grid-column: 3/4;
+	grid-row: 17/18;
+}
+
+#history .history-content:nth-child(19) {
+	grid-column: 1/2;
+	grid-row: 18/19;
+	text-align: right;
+}
+
+#history-footer {
+	grid-column: 1/4;
+	grid-row: 19/20;
+	text-align: center;
+	padding: 3rem;
+}
+
+#history-footer p {
+	font-style: italic;
+}
+
+#history-button {
+	margin: 3rem 0 12rem 0;
+}
+
+.history-visible {
+	height: auto !important;
+	overflow-y: auto !important;
+}
+
+.button-invisible {
+	display: none !important;
+}

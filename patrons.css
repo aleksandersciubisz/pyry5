@@ -1,0 +1,53 @@
+#patrons {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 12rem 0;
+	background: url(church/patrons.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 24rem 3rem;
+
+	box-shadow: 0 4px 30px hsla(359, 59%, 31%, 0.7);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	border-top: 1px solid hsla(36, 100%, 95%, 0.6);
+	border-bottom: 1px solid hsla(36, 100%, 95%, 0.6);
+}
+
+#patrons-content {
+	width: 100%;
+	max-width: var(--max);
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;
+}
+
+#patrons-text {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 1.61rem;
+	background: var(--light-opaque);
+	border-radius: 3px;
+}
+
+#patrons-text p,
+#patrons-text h1 {
+	margin-bottom: 3rem;
+}
+
+#patrons-text h2 {
+	margin-top: 1.61rem;
+}

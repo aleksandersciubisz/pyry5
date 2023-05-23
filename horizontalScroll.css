@@ -1,12 +1,8 @@
-.horizontal-scroll-wrapper {
+#parish-wrapper {
 	overflow-x: hidden;
 	position: relative;
 }
 
-.horizontal-scroll-container {
+#parish-horizontal-scroll {
 	display: flex;
-	width: 400vw;
-}
-
-.scrollx {
 }

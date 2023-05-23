@@ -1,0 +1,94 @@
+#people {
+	height: auto;
+	min-height: 200vh;
+	width: 100%;
+	max-width: var(--max);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 6rem 3rem;
+}
+
+.margin-bottom-6 {
+	margin-bottom: 6rem;
+}
+
+.margin-bottom-12 {
+	margin-bottom: 12rem;
+}
+
+#priests,
+#sisters,
+#parishioners {
+	width: 100%;
+	height: auto;
+	min-height: 50vh;
+	margin-bottom: 6rem;
+}
+
+#more-priests,
+#more-sisters,
+#more-parishioners {
+	display: none;
+}
+
+.visible {
+	display: inline-block !important;
+}
+
+#people button {
+	margin-bottom: 8rem;
+	margin-left: 0;
+}
+
+.person-card {
+	width: 100%;
+	height: auto;
+	min-height: 50vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 3rem;
+}
+
+.person-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-right: 3rem;
+}
+
+.person-text p {
+	margin: 3rem 0;
+}
+
+.person-social {
+	width: auto;
+	display: flex;
+	align-items: baseline;
+}
+
+.person-social svg {
+	margin-left: 1.61rem;
+	transition: all 0.4s ease;
+}
+
+.person-social a svg:hover path,
+.person-social a svg:hover polygon {
+	stroke: var(--dark-alt);
+	stroke-width: 2;
+}
+
+.person-card img {
+	height: auto;
+	min-height: 50vh;
+	width: auto;
+	border-radius: 3px;
+	box-shadow: 0 4px 30px hsla(359, 59%, 31%, 0.7);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	border: 1px solid hsla(36, 100%, 95%, 0.6);
+}

@@ -8,12 +8,21 @@ import '/styles/reusables/links&buttons.css'
 import '/styles/reusables/cursor.css'
 import '/styles/reusables/blob.css'
 import '/styles/reusables/horizontalScroll.css'
+import '/styles/reusables/animation.css'
 
 // Section styles
 import '/styles/sections/home.css'
 import '/styles/sections/news.css'
 import '/styles/sections/parish.css'
-import '/styles/sections/priestsSistersParishioners.css'
+import '/styles/sections/people.css'
+import '/styles/sections/groups.css'
+import '/styles/sections/sacraments.css'
+import '/styles/sections/patrons.css'
+import '/styles/sections/office.css'
+import '/styles/sections/cementary.css'
+import '/styles/sections/history.css'
+import '/styles/sections/art.css'
+import '/styles/sections/contact.css'
 
 // #######################################
 // navigation menu toggle - START
@@ -195,20 +204,62 @@ cursor.init()
 // #######################################
 
 // #######################################
-// Horizontal scroll START
+// people button START
+const priestsButton = document.getElementById('priests-button')
+const morePriests = document.getElementById('more-priests')
+priestsButton.addEventListener('click', visible1)
+function visible1() {
+	morePriests.classList.add('visible')
+	priestsButton.classList.add('button-invisible')
+}
 
-// const parishSections = gsap.utils.toArray('#parish-container section')
+const sistersButton = document.getElementById('sisters-button')
+const moreSisters = document.getElementById('more-sisters')
+sistersButton.addEventListener('click', visible2)
+function visible2() {
+	moreSisters.classList.add('visible')
+	sistersButton.classList.add('button-invisible')
+}
 
-// let parishScroll = gsap.to(parishSections, {
-// 	xPercent: -100 * (parishSections.length - 1),
-// 	ease: 'none',
-// 	scrollTrigger: {
-// 		trigger: '#parish-container',
-// 		pin: true,
-// 		scrub: 1,
-// 		end: '+=3000',
-// 	},
-// })
+const parishionersButton = document.getElementById('parishioners-button')
+const moreParishioners = document.getElementById('more-parishioners')
+parishionersButton.addEventListener('click', visible3)
+function visible3() {
+	moreParishioners.classList.add('visible')
+	parishionersButton.classList.add('button-invisible')
+}
 
-// Horizontal scroll END
+// people cursor END
+// #######################################
+
+// #######################################
+// HISTORY button START
+
+const historyButton = document.getElementById('history-button')
+const historySection = document.getElementById('history')
+
+historyButton.addEventListener('click', historyVisible)
+function historyVisible() {
+	historySection.classList.add('history-visible')
+	historyButton.classList.add('button-invisible')
+}
+
+// HISTORY cursor END
+// #######################################
+
+// #######################################
+// "slide in" text animation START
+
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('scroll-animation')
+		}
+	})
+})
+
+const fadeIn = document.querySelectorAll('p')
+fadeIn.forEach((el) => observer.observe(el))
+
+// "slide in" text animation END
 // #######################################
